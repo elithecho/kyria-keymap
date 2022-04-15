@@ -4,8 +4,8 @@
 
 # LEADER_ENABLE = yes        # Enable the Leader Key feature
 
-RGBLIGHT_ENABLE = yes      # Enable keyboard RGB underglow
-AUTO_SHIFT_ENABLE = yes
+# RGBLIGHT_ENABLE = yes      # Enable keyboard RGB underglow
+# AUTO_SHIFT_ENABLE = yes
 
 
 EXTRAFLAGS += -flto

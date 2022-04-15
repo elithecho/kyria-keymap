@@ -26,4 +26,4 @@
 #define NO_PRINT
 #endif // !NO_PRINT
 
-#define NO_MUSIC_MOD
+#define NO_MUSIC_MODE
