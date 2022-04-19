@@ -4,6 +4,7 @@
 #define MD_SPC MT(MOD_LSFT, KC_SPC)
 #define MD_ESC MT(MOD_LCTL, KC_ESC)
 #define MD_TAB MT(MOD_LGUI, KC_TAB)
+#define MD_ENT MT(MOD_RGUI, KC_ENT)
 
 enum layers {
     COLEMAK,
@@ -35,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_NO, KC_Q,   KC_W,   KC_F,   KC_P,    KC_B,                                        KC_J,     KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_NO,
       KC_NO, KC_A,   KC_R,   KC_S,   KC_T,    KC_G,                                        KC_K,     KC_N,    KC_E,    KC_I,    KC_O,    KC_NO,
       KC_NO, KC_Z,   KC_X,   KC_C,   KC_D,    KC_V,   KC_DEL,  MO(RAISE), KC_TAB,  KC_ESC, KC_M,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_NO,
-                             KC_NO,  KC_LALT, MD_ESC, MD_BSPC, MD_TAB,    KC_ENT,  MD_SPC, KC_RCTRL, KC_EQL,  KC_BSLS
+                             KC_NO,  KC_LALT, MD_ESC, MD_BSPC, MD_TAB,    MD_ENT,  MD_SPC, KC_RCTRL, KC_EQL,  KC_BSLS
     ),
 /*
  * Lower Layer: Numbers, functions, symbols
