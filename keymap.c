@@ -38,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [COLEMAK] = LAYOUT(
       KC_NO, KC_Q,   KC_W,   KC_F,   KC_P,    KC_B,                                        KC_J,     KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_NO,
       KC_NO, KC_A,   KC_R,   KC_S,   KC_T,    KC_G,                                        KC_K,     KC_N,    KC_E,    KC_I,    KC_O,    KC_NO,
-      KC_NO, MD_Z,   KC_X,   MD_C,   KC_D,    KC_V,   KC_DEL,  MO(RAISE), KC_TAB,  KC_ESC, KC_M,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_NO,
-                             KC_NO,  KC_LALT, MD_ESC, MD_BSPC, MD_TAB,    MD_ENT,  MD_SPC, KC_RCTRL, KC_EQL,  KC_BSLS
+      KC_NO, MD_Z,   MD_X,   MD_C,   KC_D,    KC_V,   _______,  MO(RAISE), KC_TAB,  KC_ESC, KC_M,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_NO,
+                             KC_NO,  KC_DEL, MD_ESC, MD_BSPC, MD_TAB,    MD_ENT,  MD_SPC, KC_RCTRL, KC_EQL,  KC_BSLS
     ),
 /*
  * Lower Layer: Numbers, functions, symbols
@@ -56,9 +56,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        `----------------------------------'  `----------------------------------'
  */
     [LOWER] = LAYOUT(
-      _______, KC_EXLM, KC_AT,  KC_LCBR, KC_RCBR, KC_ASTR,                                      _______, KC_VOLU, KC_VOLD, KC_MUTE,  KC_MINS, _______,
+      _______, KC_EXLM, KC_AT,  KC_LCBR, KC_RCBR, KC_ASTR,                                      KC_MUTE, KC_VOLU, KC_VOLD, KC_PLUS,  KC_MINS, _______,
       _______, KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_QUOT, _______,
-      _______, KC_PERC, KC_CIRC,KC_LBRC, KC_RBRC, KC_AMPR,  MO(RAISE), KC_LGUI, _______, _______, _______, KC_PGUP, KC_PGDN, _______,  KC_BSLS, _______,
+      _______, KC_PERC, KC_CIRC,KC_LBRC, KC_RBRC, KC_AMPR,  MO(RAISE), KC_LGUI, _______, _______, _______, KC_PGUP, KC_PGDN, _______,KC_BSLS, _______,
                                 _______, _______, _______,  _______, _______, _______,  _______, KC_PLUS, KC_EQL,  _______
     ),
 /*

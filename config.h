@@ -1,5 +1,8 @@
 #pragma once
 
+#define TAPPING_TERM 300
+#define IGNORE_MOD_TAP_INTERRUPT
+
 #ifdef RGBLIGHT_ENABLE
   #define RGBLIGHT_ANIMATIONS
   #define RGBLIGHT_HUE_STEP 8
