@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______, KC_EXLM, KC_AT,  KC_LCBR, KC_RCBR, KC_ASTR,                                      _______, KC_VOLU, KC_VOLD, KC_MUTE,  KC_MINS, _______,
       _______, KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_QUOT, _______,
       _______, KC_PERC, KC_CIRC,KC_LBRC, KC_RBRC, KC_AMPR,  KC_LGUI, KC_LGUI, _______, _______, _______, KC_PGUP, KC_PGDN, _______,  KC_BSLS, _______,
-                                _______, _______, _______,  _______, _______, KC_TAB,  _______, KC_PLUS, KC_GT, _______
+                                _______, _______, _______,  _______, _______, KC_TAB,  _______, KC_PLUS, KC_EQL,  _______
     ),
 /*
  * Raise Layer: Functions, Numbers
