@@ -36,10 +36,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        `----------------------------------'  `----------------------------------'
  */
     [COLEMAK] = LAYOUT(
-      KC_NO, KC_Q,   KC_W,   KC_F,   KC_P,    KC_B,                                        KC_J,     KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_NO,
-      KC_NO, KC_A,   KC_R,   KC_S,   KC_T,    KC_G,                                        KC_K,     KC_N,    KC_E,    KC_I,    KC_O,    KC_NO,
-      KC_NO, MD_Z,   MD_X,   MD_C,   KC_D,    KC_V,   _______,  MO(RAISE), KC_TAB,  KC_ESC, KC_M,     KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_NO,
-                             KC_NO,  KC_DEL, MD_ESC, MD_BSPC, MD_TAB,    MD_ENT,  MD_SPC, KC_RCTRL, KC_EQL,  KC_BSLS
+      KC_NO, KC_Q,   KC_W,   KC_F,   KC_P,    KC_B,                                          KC_J,   KC_L,   KC_U,    KC_Y,    KC_SCLN, KC_NO,
+      KC_NO, KC_A,   KC_R,   KC_S,   KC_T,    KC_G,                                          KC_K,   KC_N,   KC_E,    KC_I,    KC_O,    KC_NO,
+      KC_NO, MD_Z,   MD_X,   MD_C,   KC_D,    KC_V,  _______, MO(RAISE), KC_TAB,  MO(RAISE), KC_M,   KC_H,   KC_COMM, KC_DOT,  KC_SLSH, KC_NO,
+                             KC_NO,  KC_DEL, MD_ESC, MD_BSPC, MD_TAB,    MD_ENT,  MD_SPC, KC_EQL, KC_EQL, KC_BSLS
     ),
 /*
  * Lower Layer: Numbers, functions, symbols
@@ -51,15 +51,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
  * |        | %    | ^    | [    | ]    | &    |Raise | Cmd  |  |      |      | Pgup | Pgdn | F8   | F9   | F10  |        |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
- *                        |      |      |      |      |      |  |      |SHIFT | +    | >    |      |
+ *                        |      |      |      |      |      |  |      |Raise | +    | >    |      |
  *                        |      |      |      |      |      |  |      |      |      |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
     [LOWER] = LAYOUT(
-      _______, KC_EXLM, KC_AT,  KC_LCBR, KC_RCBR, KC_ASTR,                                      KC_MUTE, KC_VOLU, KC_VOLD, KC_PLUS,  KC_MINS, _______,
-      _______, KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_QUOT, _______,
-      _______, KC_PERC, KC_CIRC,KC_LBRC, KC_RBRC, KC_AMPR,  MO(RAISE), KC_LGUI, _______, _______, _______, KC_PGUP, KC_PGDN, _______,KC_BSLS, _______,
-                                _______, _______, _______,  _______, _______, _______,  _______, KC_PLUS, KC_EQL,  _______
+      _______, KC_EXLM, KC_AT,  KC_LCBR, KC_RCBR, KC_ASTR,                                       KC__MUTE, KC_VOLU, KC_VOLD, KC_EQL,  KC_MINS, _______,
+      _______, KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,                                      KC_LEFT,  KC_DOWN, KC_UP,   KC_RIGHT, KC_QUOT, _______,
+      _______, KC_PERC, KC_CIRC,KC_LBRC, KC_RBRC, KC_AMPR,  KC_ESC,  _______, _______,  _______, _______,  KC_PGDN, KC_PGUP, _______,  KC_BSLS, _______,
+                                _______, _______, _______,  _______, _______, MO(RAISE),_______, KC_PLUS, KC_EQL,  _______
     ),
 /*
  * Raise Layer: Functions, Numbers
@@ -76,10 +76,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        `----------------------------------'  `----------------------------------'
  */
     [RAISE] = LAYOUT(
-      _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                        KC_6,    KC_7,    KC_8,    KC_9,   KC_0,   _______,
-      _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                       KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10, _______,
-      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_F11, KC_F12, _______,
-                                 _______, _______, _______, _______, _______, _______, _______, _______,  _______, _______
+      _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                        _______, KC_7, KC_8, KC_9, _______,   _______,
+      _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                       _______, KC_4, KC_5, KC_6, _______, _______,
+      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_1, KC_2, KC_3, _______, _______,
+                                 _______, _______, _______, _______, _______, _______, _______, KC_0,  _______, _______
     ),
 /*
  * Navigation Layer
